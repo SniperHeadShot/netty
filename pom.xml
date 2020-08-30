@@ -112,8 +112,8 @@
         <!-- 1.4.x does not work in Java10+ -->
         <jboss.marshalling.version>2.0.5.Final</jboss.marshalling.version>
         <!-- This is the minimum supported by Java12+ -->
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <!-- pax-exam does not work on latest Java12 EA 22 build -->
         <skipOsgiTestsuite>true</skipOsgiTestsuite>
       </properties>
@@ -755,6 +755,12 @@
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.barchart.udt</groupId>
+      <artifactId>barchart-udt-bundle</artifactId>
+      <version>2.3.0</version>
     </dependency>
   </dependencies>
 
